@@ -1,1 +1,4 @@
 @import "tailwindcss";
+@theme {
+    --color-primary:#5f6FFF ; /* Replace with your desired primary color */
+  }

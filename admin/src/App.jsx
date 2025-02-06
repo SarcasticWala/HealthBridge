@@ -1,9 +1,11 @@
 import React from 'react'
+import Login from './pages/login'
 
 const App = () => {
   return (
     <div >
-      <p className="text-lg ...">The quick brown fox ...</p>
+    <Login/>
+
     </div>
   )
 }
