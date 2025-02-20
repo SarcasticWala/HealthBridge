@@ -41,10 +41,10 @@ const Login = () => {
   };
 
   return (
-    <form onSubmit={onSubmitHandler} className='min-h-[80vh] flex items-center'>
-      <div className='flex flex-col gap-3 m-auto items-start p-8 min-w-[340px] sm:min-w-96 border rounded-xl text-zinc-600 text-sm shadow-lg'>
+    <form onSubmit={onSubmitHandler} className='min-h-[80vh] flex items-center px-4'>
+      <div className='flex flex-col gap-3 m-auto items-start p-8 w-full max-w-md border rounded-xl text-zinc-600 text-sm shadow-lg'>
         <p className='text-2xl font-semibold m-auto'>{state === 'Sign Up' ? 'Create Account' : 'Login'}</p>
-        <p>Please {state === 'Sign Up' ? 'sign up' : 'log in'} to continue.</p>
+        <p className='text-center w-full'>{state === 'Sign Up' ? 'sign up' : 'log in'} to continue.</p>
         
         {state === 'Sign Up' && (
           <div className='w-full'>
@@ -67,12 +67,12 @@ const Login = () => {
         
         {errorMessage && <p className='text-red-500'>{errorMessage}</p>}
         
-        <button className='bg-primary text-white text-sm font-light px-14 py-3 rounded-full my-6'>{state === 'Sign Up' ? 'Create Account' : 'Login'}</button>
+        <button className='bg-primary text-white text-sm font-light px-14 py-3 rounded-full my-6 w-full'>{state === 'Sign Up' ? 'Create Account' : 'Login'}</button>
         
         {state === 'Sign Up' ? (
-          <p>Already have an account? <span onClick={() => setState('Login')} className='text-primary underline cursor-pointer'>Login here</span></p>
+          <p className='text-center w-full'>Already have an account? <span onClick={() => setState('Login')} className='text-primary underline cursor-pointer'>Login here</span></p>
         ) : (
-          <p>Don't have an account? <span onClick={() => setState('Sign Up')} className='text-primary underline cursor-pointer'>Sign up here</span></p>
+          <p className='text-center w-full'>Don't have an account? <span onClick={() => setState('Sign Up')} className='text-primary underline cursor-pointer'>Sign up here</span></p>
         )}
       </div>
     </form>
