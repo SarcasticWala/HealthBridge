@@ -62,7 +62,7 @@ const AddDoctor = () => {
   return (
     <form onSubmit={onSubmitHandler} className="p-4 md:p-8 bg-white rounded-xl shadow-lg max-w-4xl mx-auto">
       <p className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-4 md:mb-8">Add Doctor</p>
-      <div className="flex flex-col items-center mb-4 md:mb-8">
+      <div className="flex flex-col items-center mb-5 md:mb-8">
         <label htmlFor="doc-img" className="cursor-pointer hover:opacity-80 transition-opacity">
           <img src={docImg ? URL.createObjectURL(docImg) : assets.upload_area} alt="" className="w-24 h-24 md:w-32 md:h-32 mb-4 rounded-full border-4 border-blue-100 shadow-md" />
         </label>
