@@ -69,7 +69,7 @@ const AddDoctor = () => {
         <input onChange={(e) => setDocImg(e.target.files[0])} type="file" name="file" id="doc-img" hidden />
         <p className="text-center text-gray-600 font-medium">Upload doctor picture</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
         <div>
           <div className="mb-4 md:mb-6">
             <p className="font-semibold text-gray-700 mb-2">Doctor Name</p>
